@@ -3,16 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/drawable/ic_check_solid.xml" value="0.1815" />
-        <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/drawable/ic_edit_solid.xml" value="0.181" />
-        <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/drawable/ic_mute_icon.xml" value="0.1815" />
-        <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/drawable/notifbg.xml" value="0.1815" />
-        <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/drawable/notifbluebg.xml" value="0.1815" />
-        <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/drawable/oval.xml" value="0.1815" />
-        <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/layout/activity_main.xml" value="0.2128623188405797" />
-        <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/layout/fragment_chat.xml" value="0.4" />
-        <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/layout/fragment_conracts.xml" value="0.25416666666666665" />
-        <entry key="..\:/me/semester 5/tugas kelompok 3/immitTelegram/app/src/main/res/menu/navigation_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/NavigationDrawerKelompokTiga/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/NavigationDrawerKelompokTiga/app/src/main/res/layout/fragment_chat.xml" value="0.2" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/NavigationDrawerKelompokTiga/app/src/main/res/layout/fragment_conracts.xml" value="0.2" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/NavigationDrawerKelompokTiga/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/NavigationDrawerKelompokTiga/app/src/main/res/menu/navigation_menu.xml" value="0.22" />
       </map>
     </option>
   </component>
