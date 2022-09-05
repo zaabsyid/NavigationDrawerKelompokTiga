@@ -6,9 +6,360 @@
     tools:context=".SettingsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="#000">
+        <RelativeLayout
+            android:paddingLeft="10dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_qrcode" />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/userprofile13" />
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="#396AAA"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit"
+                android:layout_marginTop="10dp"
+                android:padding="0dp"
+                android:text="Danial Farros Maulana"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginTop="1dp"
+                android:text="+62 858-5960-0019 @loophaha"
+                android:textAlignment="center"
+                android:padding="0dp"
+                android:textSize="15dp"
+                android:textColor="#6BFFFFFF"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbg">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_camera_plus_2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Photo or Video"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="12dp"
+                    android:textColor="#396AAA"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbg">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="!"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/notifbgred"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Is +62 858-5960-0019 still your \nnumber? "
+                        android:layout_marginLeft="7dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:text="Keep your number up to date to ensure you can\nalways log in to Telegram"/>
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#6BFFFFFF"/>
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Keep +62 858-5960-0019"
+                    android:textSize="17dp"
+                    android:textColor="#396AAA"/>
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#6BFFFFFF"/>
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Change Number"
+                    android:textSize="17dp"
+                    android:textColor="#396AAA"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbg">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_bookmark"
+                        android:padding="4dp"
+                        android:background="@drawable/settingbluebg"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saved Messages"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#6BFFFFFF"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_phone"
+                        android:padding="4dp"
+                        android:background="@drawable/settinggreenbg"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recent Call"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#6BFFFFFF"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_laptop"
+                        android:padding="4dp"
+                        android:background="@drawable/settingyellowbg"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Devices"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#6BFFFFFF"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_folder_open"
+                        android:padding="4dp"
+                        android:background="@drawable/settinglightbg"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chat Folders"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#6BFFFFFF"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settingbg">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_notif"
+                        android:padding="4dp"
+                        android:background="@drawable/settingredbg"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notification and Sound"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#6BFFFFFF"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_phone"
+                        android:padding="4dp"
+                        android:background="@drawable/settinggreenbg"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recent Call"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#6BFFFFFF"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_laptop"
+                        android:padding="4dp"
+                        android:background="@drawable/settingyellowbg"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Devices"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#6BFFFFFF"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_folder_open"
+                        android:padding="4dp"
+                        android:background="@drawable/settinglightbg"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chat Folders"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#6BFFFFFF"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
 
 </FrameLayout>
