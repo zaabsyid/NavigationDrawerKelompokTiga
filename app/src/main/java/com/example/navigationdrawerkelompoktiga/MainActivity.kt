@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var drawerLayoutTele:DrawerLayout = findViewById(R.id.drawerLayoutTelegram)
+        var drawerLayoutTele: DrawerLayout = findViewById(R.id.drawerLayoutTelegram)
 
         // drawer layout instance to toggle the menu icon to open drawer and back button to close drawer
         var actionBarDrawerToggle = ActionBarDrawerToggle(this, drawerLayoutTele, R.string.nav_open, R.string.nav_close)
@@ -30,7 +31,32 @@ class MainActivity : AppCompatActivity() {
         var drawerLayoutTele:DrawerLayout = findViewById(R.id.drawerLayoutTelegram)
         var actionBarDrawerToggle = ActionBarDrawerToggle(this, drawerLayoutTele, R.string.nav_open, R.string.nav_close)
 
-        if (actionBarDrawerToggle.onOptionsItemSelected(item)) return true
+        if (actionBarDrawerToggle.onOptionsItemSelected(item)){
+            nav_drawer.setNavigationItemSelectedListener{
+                when(it.itemId){
+                    R.id.chat -> {
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.fcTelegram, ChatFragment())
+                            .commit()
+                        return@setNavigationItemSelectedListener true
+                    }
+                    R.id.contact -> {
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.fcTelegram, ConractsFragment())
+                            .commit()
+                        return@setNavigationItemSelectedListener true
+                    }
+                    R.id.setting -> {
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.fcTelegram, SettingsFragment())
+                            .commit()
+                        return@setNavigationItemSelectedListener true
+                    }
+                    else -> return@setNavigationItemSelectedListener true
+                }
+            }
+            return true
+        }
         else return super.onOptionsItemSelected(item)
     }
 }

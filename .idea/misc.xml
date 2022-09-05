@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/drawable/ic_add_user.xml" value="0.3525" />
         <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/drawable/ic_bookmark.xml" value="0.203" />
         <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/drawable/ic_camera_plus_2.xml" value="0.3525" />
@@ -30,6 +31,13 @@
         <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/layout/fragment_conracts.xml" value="0.3678071539657854" />
         <entry key="..\:/Program_Files/Immit-Telegram/app/src/main/res/layout/fragment_settings.xml" value="0.33" />
         <entry key="..\:/me/semester 5/tugas kelompok 3/immitTelegram/app/src/main/res/menu/navigation_menu.xml" value="0.22447916666666667" />
+=======
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/NavigationDrawerKelompokTiga/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/NavigationDrawerKelompokTiga/app/src/main/res/layout/fragment_chat.xml" value="0.33" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/NavigationDrawerKelompokTiga/app/src/main/res/layout/fragment_conracts.xml" value="0.23222748815165878" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/NavigationDrawerKelompokTiga/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/NavigationDrawerKelompokTiga/app/src/main/res/menu/navigation_menu.xml" value="0.22" />
+>>>>>>> 3ebc44bd955d7dced56bd0a36355d459e23eb806
       </map>
     </option>
   </component>
